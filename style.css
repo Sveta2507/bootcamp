@@ -1,6 +1,6 @@
 body {
     background-color: rgb(211, 217, 236);
-    border: 1px solid;
+
 }
 
 *{
@@ -11,7 +11,7 @@ body {
 .container {
     width: 320px;
     margin: 0 auto;
-    border: 2px solid;
+    border: 1px solid;
 }
 
 ul {
@@ -43,6 +43,21 @@ ul {
      text-transform: capitalize;
      font-size: 16px;
      padding-top: 38px;
+     position: relative;
+ }
+
+ .logo::before {
+    content: "";
+    position: absolute;
+    background: url(./images/icons/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    left: -50px;
+    top: 24px;
  }
 
  .logo span {
@@ -54,11 +69,82 @@ ul {
      padding: 26px 0;
  }
 
- section {
-     padding-top: 200px;
+ .menu li:last-child {
+    position: relative;
  }
 
- footer_wrapper {
+ .menu li:last-child::before {
+    position: absolute;
+    content: "";
+    background: url(./images/icons/viber.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    top: 0px;
+    left: -22px;
+}
+
+    .s1 {
+        padding-top: 400px;
+        padding-left: 20px;
+        background: #535353 url(./images/background.png);
+        background-size: cover;
+        background-blend-mode: soft-light;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;
+        color: white;
+ }
+
+.s1_title {
+    font-size: 35px;
+    font-family: "GothamPro-Bold";
+    padding-right: 148px;
+}
+
+section {
+    padding-top: 200px;
+}
+
+  .s1_list {
+      padding-top: 24px;
+      padding-bottom: 80px;
+  }
+
+  .s1_list-item {
+    font-size: 14px;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.s1_list-item::before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: url(./images/icons/star.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.s1_list-item span {
+    color: #ffe100;
+}
+
+.s1_bottom-arrow {
+    transform: rotate(90deg);
+    color: #ffe100;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    padding-right: 54px;
+}
+
+ .footer_wrapper {
      width: 100%;
      background-color: black;
 
