@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(./fonts/OpenSans-Regular.eot) format("embedded-opentype"),
+        url(./fonts/OpenSans-Regular.ttf) format("truetype"),
+        url(./fonts/OpenSans-Regular.woff) format("woff");
+}
+
+@font-face {
+    font-family: "GothamPro-Bold";
+    src: url(./fonts/GothamPro-Bold.eot) format("embedded-opentype"),
+        url(./fonts/GothamPro-Bold.ttf) format("truetype"),
+        url(./fonts/GothamPro-Bold.woff) format("woff");
+}
+
+@font-face {
+    font-family: "Coustard";
+    src: url(./fonts/Coustard-Regular.ttf) format("truetype");
+}
+
 body {
     background-color: rgb(211, 217, 236);
 
@@ -142,6 +161,133 @@ section {
     display: block;
     margin: auto;
     padding-right: 54px;
+}
+
+.s2 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.s2_title {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    font-family: "GothamPro-Bold";
+    padding: 64px 25px 0px;
+    margin-bottom: 74px;
+}
+
+.s2_list {
+    padding-bottom: 12px;
+}
+
+.s2_list-item {
+    width: 170px;
+    height: 170px;
+    border: 6px double yellow;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.s2_list-item::before {
+    content: "";
+    position: absolute;
+    width: 86px;
+    height: 86px;
+    background-color: yellow;
+    border-radius: 50%;
+    top: -29%;
+    left: 23%;
+}
+
+.s2_list-item:nth-child(1)::before {
+    background: yellow url(./images/icons/icon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item:nth-child(2)::before {
+    background: yellow url(./images/icons/icon1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item:nth-child(3)::before {
+    background: yellow url(./images/icons/icon2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item:nth-child(4)::before {
+    background: yellow url(./images/icons/icon3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.s2_list-item p {
+    display: block;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.s2_list-item p:first-child {
+    padding-top: 40px;
+}
+
+.s4 {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.s4_title {
+    position: relative;
+    padding-top: 116px 20px 0px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "GothamPro-Bold";
+}
+
+.s4_title::before {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 37px;
+    background: url(./images/icons/icon4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: -50%;
+    left: 43%;
+}
+
+.s4_list {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    padding: 38px 20px 68px 75px;
+    position: relative;
+}
+
+.s4_list::before {
+    position: absolute;
+    content: "";
+    height: 60%;
+    border: 2px solid yellow;
+    top: 15%;
+    left: 12%;
+}
+
+.s4_lost-item {
+    line-height: 30px;
+}
+
+.s4_list-item:last-child {
+    display: none;
 }
 
  .footer_wrapper {
