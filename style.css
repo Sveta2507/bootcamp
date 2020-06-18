@@ -1,15 +1,15 @@
 @font-face {
     font-family: "OpenSans";
-    src: url(./fonts/OpenSans-Regular.eot) format("embedded-opentype"),
-        url(./fonts/OpenSans-Regular.ttf) format("truetype"),
-        url(./fonts/OpenSans-Regular.woff) format("woff");
+    src: url(./fonts/OpenSans/OpenSans-Regular.eot) format("embedded-opentype"),
+        url(./fonts/OpenSans/OpenSans-Regular.ttf) format("truetype"),
+        url(./fonts/OpenSans/OpenSans-Regular.woff) format("woff");
 }
 
 @font-face {
     font-family: "GothamPro-Bold";
-    src: url(./fonts/GothamPro-Bold.eot) format("embedded-opentype"),
-        url(./fonts/GothamPro-Bold.ttf) format("truetype"),
-        url(./fonts/GothamPro-Bold.woff) format("woff");
+    src: url(./fonts/GothamPro/GothamPro-Bold.eot) format("embedded-opentype"),
+        url(./fonts/GothamPro/GothamPro-Bold.ttf) format("truetype"),
+        url(./fonts/Gothampro/GothamPro-Bold.woff) format("woff");
 }
 
 @font-face {
@@ -235,6 +235,59 @@ section {
 
 .s2_list-item p:first-child {
     padding-top: 40px;
+}
+
+.s3 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    background:  #535353 url(./images/background.png);
+    background-blend-mode: soft-light;
+    width: auto;
+    padding: 100px 0;
+}
+
+.amt-carousel-hider {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: 320px;
+    overflow: hidden;
+}
+
+.amt-carousel-list {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.amt-carousel-element {
+    margin: 20px;
+}
+
+.amt-carousel-element img {
+    width: 280px;
+    height: 230px;
+    border: 15px solid;
+}
+
+.amt-carousel-element p {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 50px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.amt-carousel-element p::before {
+    position: absolute;
+    content: "";
+    width: 38px;
+    border: 1px solid yellow;
+    top: 10px;
+    left: 0px;
+    background-color: yellow;
 }
 
 .s4 {
