@@ -104,6 +104,87 @@ ul {
     left: -22px;
 }
 
+.menu li a {
+    color: red;
+}
+
+.menu li a:hover {
+    color: royalblue;
+    background-color: yellow;
+    font-size: large;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    border-radius: 15%;
+}
+
+/*hamburger menu*/
+
+.header_nav .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-btn {
+    /*display: none;*/
+}
+
+/*label - обертка гамбургера*/
+.header .menu-icon {
+    display: flex;
+    width: 70px;
+    border: 1px solid red;
+    padding: 20px;
+    position: relative;
+    user-select: none;
+    cursor: grab;
+}
+
+/* это спан из html - основной элемент гамбургера*/ 
+
+.header .menu-icon .navicon {
+    display: block;
+    border: 2px solid yellow;
+    width: 25px;
+    position: relative;
+    transition: backgroung 0.2s ease-out;
+}
+.header .menu-icon .navicon::before,
+.header .menu-icon .navicon::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.header .menu-icon .navicon::before {
+    border: 2px solid green;
+    top: 10px;
+}
+
+.header .menu-icon .navicon::after {
+    border: 2px solid blue;
+    top: -10px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    border: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 100%;
+}
+
     .s1 {
         padding-top: 400px;
         padding-left: 20px;
@@ -223,6 +304,17 @@ section {
     background: yellow url(./images/icons/icon3.png);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.s2_list-item:hover {
+    background-color: rgb(146, 11, 146);
+    width: 200px;
+    height: 200px;
+}
+
+.s2_list-item:hover::before {
+    top: -50px;
+    left: 50px;
 }
 
 .s2_list-item p {
