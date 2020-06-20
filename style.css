@@ -308,8 +308,11 @@ section {
 
 .s2_list-item:hover {
     background-color: rgb(146, 11, 146);
+    /*color: white;*/
+    /*border: 16px double yellow;*/
     width: 200px;
     height: 200px;
+    transform: scale(1.2);
 }
 
 .s2_list-item:hover::before {
