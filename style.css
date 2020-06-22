@@ -58,7 +58,7 @@ ul {
      justify-content: space-between;
      margin: 0 20px;
      padding: 55px;
-     /*padding: 38px 0px 38px 55px*/
+     /*padding: 38px 0 38px 55px*/
  }
 
  .logo {
@@ -91,11 +91,12 @@ ul {
      overflow: hidden;
  }
 
- .menu li:last-child {
+ .menu li:nth-child(2) {
     position: relative;
+    padding-left: 20px;
  }
 
- .menu li:last-child::before {
+ .menu li:nth-child(2)::before {
     position: absolute;
     content: "";
     background: url(./images/icons/viber.png);
@@ -103,8 +104,8 @@ ul {
     background-repeat: no-repeat;
     width: 22px;
     height: 22px;
-    top: 0px;
-    left: -22px;
+    top: 0px; 
+    left: 0;
 }
 
 .menu li a {
@@ -192,8 +193,7 @@ ul {
 
 
     .s1 {
-        padding-top: 400px;
-        padding-left: 20px;
+        padding: 225px 20px 0;
         background: #535353 url(./images/background.png);
         background-size: cover;
         background-blend-mode: soft-light;
@@ -549,3 +549,79 @@ section {
      font-size: 12px;
      text-align: center;
  }
+
+ @media(width: 768px) {
+     .container {
+         width: 768px;
+     }
+
+     .header_nav {
+         margin: 0 40px;
+         padding: 70px 0 40px 55px;
+     }
+
+     .header .menu-icon {
+        display: none;
+     }
+
+     .menu {
+         display: flex;
+         flex-flow: row wrap;
+         justify-content: space-between;
+         overflow: visible;
+     }
+
+     .menu li {
+         margin-right: 10px;
+     }
+
+     .menu li:nth-child(1) {
+         position: relative;
+     }
+
+     .menu li:nth-child(1)::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        height: 20px;
+        background: grey;
+        top: 1px;
+        right: -10px;
+     }
+
+     .s1 {
+         padding: 253px 40px 0;
+     }
+
+     .s1_title {
+         font-size: 50px;
+     }
+
+     .s1_list-item {
+         font-size: 20px;
+     }
+
+     .s1_list-item::before {
+        top: 4px;
+     }
+
+     .s2_title {
+         font-size: 20px;
+         padding: 80px;
+     }
+
+     .s2_list {
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 32px;
+     }
+
+     .s2_list-item {
+         margin-right: 20px;
+     }
+
+     .s2_list-item:last-child {
+         margin-right: 0;
+     }
+}
