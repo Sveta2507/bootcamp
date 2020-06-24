@@ -674,4 +674,60 @@ section {
         top: 15%;
         height: 60%;
     }
+
+    /* section 5 */
+
+    .s5 {
+        flex-flow: row wrap;
+        padding: 79px 0 0 129px; 
+    }
+
+    .s5 div {
+        width: 246px;
+        margin: 0 20px 40px 0;
+    }
+
+    .s5_list {
+        padding: 0;
+    }
+
+    .s5_list:not(:first-child) {
+        padding-top: 42px;
+    }
+
+    .s5_list:not(:first-child):before {
+        left: 0;
+    }
+
+    .s5_list,
+    .s5_title,
+    .s5_list-contact,
+    .s5_list-item {
+        padding: 0;
+        margin: 0;
+    }
+
+    .s5_list-item {
+        padding-left: 35px;
+    }
+
+    .s5_list-item::before {
+        top: 0px;
+        left: 0px;
+    }
+
+    .s5_title {
+        padding: 0;
+    }
+
+    /* footer */
+
+    .footer p {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 22px 0;
+    }
+
 }
