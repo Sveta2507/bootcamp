@@ -47,7 +47,7 @@ ul {
      position: fixed;
      background: wheat;
      width: 100%;
-     top: -50px;
+     /* top: -50px; */
      z-index: 100;
  }
 
@@ -209,10 +209,6 @@ ul {
     padding-right: 148px;
 }
 
-section {
-    padding-top: 200px;
-}
-
   .s1_list {
       padding-top: 24px;
       padding-bottom: 80px;
@@ -344,6 +340,7 @@ section {
     justify-content: center;
     background:  #535353 url(./images/background.png);
     background-blend-mode: soft-light;
+    background-size: cover;
     width: auto;
     padding: 100px 0;
 }
