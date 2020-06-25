@@ -6,7 +6,7 @@ name = 'Aleksa'; //инициализация переменной
 console.log(name); // Aleksa
 
 name = 'Aleksandra'; // переприсвоение значения
-console.log(name); // Alrsandra
+console.log(name); // Aleksandra
 
 // const lastName; - нельзя объявить без зачения
 const lastName = "Hrevtsova";// объявляем и инициализируем одновременно
