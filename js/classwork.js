@@ -24,7 +24,7 @@ console.log(typeof myName); //string
 
 let count = '30';
 console.log(count);
-console.log(typeof age); //number
+console.log(typeof count); //number
 
 // 2 - number
 let age = 30
