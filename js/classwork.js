@@ -85,7 +85,7 @@ console.log(arr);
 
 const productslist = [
     "apples",
-    { meat = "chicken", eggs: 10, bread: "white"},
+    { meat: "chicken", eggs: 10, bread: "white"},
     null,
 ];
 
@@ -130,6 +130,9 @@ console.log("I'm a function Expression!");
 funcExpression(1, 2, 3);
 
 //arrow function
+
+const arrowFunc = (a, b, c) => console.log(a + b - c);
+arrowFunc(19, 45, 25);
 
 //function declaration
 function funcDeclaration(a, b, c) {
