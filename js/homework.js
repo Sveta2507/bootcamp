@@ -1,23 +1,23 @@
 //task 1
 let name; //объявление переменной
-console.log(name);//undefined
+console.log(name); //undefined
 
-name = 'Sveta'; //инициализация переменной
+name = "Sveta"; //инициализация переменной
 console.log(name); // Sveta
 
-name = 'Svetlana'; // переприсвоение значения
+name = "Svetlana"; // переприсвоение значения
 console.log(name); // Svetlana
 
-const lastName = "Denysenko";// объявляем и инициализируем одновременно
+const lastName = "Denysenko"; // объявляем и инициализируем одновременно
 console.log(lastName);
 
 //примитивы
 // 1 - string ('',"",``)
-let myName = 'Svetlana';
+let myName = "Svetlana";
 console.log(name); // Svetlana
 console.log(typeof myName); //string
 
-let count = '16';
+let count = "16";
 console.log(count);
 console.log(typeof count); //number
 
@@ -47,29 +47,29 @@ console.log(typeof cart); // object - специальная ошибка в js
 
 //task 2
 const sally = {
-    //properties - существительные и прилагательные
-    name: "Sally",
-    lastName: "Fisher",
-    age: 22,
-    hairColor: "Blue",
-    married: false,
-    children: false,
-    speed: 4, //kmPerHour,
-    score: 200,
-    lives: 1,
+  //properties - существительные и прилагательные
+  name: "Sally",
+  lastName: "Fisher",
+  age: 22,
+  hairColor: "Blue",
+  married: false,
+  children: false,
+  speed: 4, //kmPerHour,
+  score: 200,
+  lives: 1,
 
-//methods - глаголы
+  //methods - глаголы
 
-toShowName() {
+  toShowName() {
     console.log(this.name);
-    },
+  },
 };
 
 console.log(sally);
-sally.name = "Sall"
+sally.name = "Sall";
 console.log(sally);
 
-sally.toShowName ();
+sally.toShowName();
 
 sally.height = 183;
 console.log(sally);
@@ -80,9 +80,9 @@ const arr = [];
 console.log(arr);
 
 const productslist = [
-    "watermelons",
-    { meat: "pork", anchovies: 15, bread: "black" },
-    null,
+  "watermelons",
+  { meat: "pork", anchovies: 15, bread: "black" },
+  null,
 ];
 
 console.log(productslist);
@@ -98,9 +98,9 @@ console.log(productslist);
 //task 3
 //многомерные массивы
 const newArr = [
-    [1, 2], //index 0
-    ["eins", "zwei"], // index 1
-    [undefined, null], //index 2
+  [1, 2], //index 0
+  ["eins", "zwei"], // index 1
+  [undefined, null], //index 2
 ];
 console.log(newArr);
 
@@ -115,11 +115,11 @@ console.log(newArr[2][1]); //null
 
 // function
 //function expression - функциональное выражение
-const funcExpression = function(params) {
-//объявление функции
-console.log(params);
-console.log("Hello!");
-console.log("I'm a function Expression!");
+const funcExpression = function (params) {
+  //объявление функции
+  console.log(params);
+  console.log("Hello!");
+  console.log("I'm a function Expression!");
 };
 // аргументы = значение параметров при вызове
 funcExpression(1, 2, 3);
@@ -131,6 +131,6 @@ arrowFunc(19, 45, 25);
 
 //function declaration
 function funcDeclaration(a, b, c) {
-    console.log(a * b * c);
+  console.log(a * b * c);
 }
 funcDeclaration(2, 4, 5);

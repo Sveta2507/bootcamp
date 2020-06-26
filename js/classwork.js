@@ -1,15 +1,15 @@
 // переменные let and const
 let name; //объявление переменной
-console.log(name);//undefined
+console.log(name); //undefined
 
-name = 'Aleksa'; //инициализация переменной
+name = "Aleksa"; //инициализация переменной
 console.log(name); // Aleksa
 
-name = 'Aleksandra'; // переприсвоение значения
+name = "Aleksandra"; // переприсвоение значения
 console.log(name); // Aleksandra
 
 // const lastName; - нельзя объявить без зачения
-const lastName = "Hrevtsova";// объявляем и инициализируем одновременно
+const lastName = "Hrevtsova"; // объявляем и инициализируем одновременно
 console.log(lastName);
 
 //lastName = "ihefoehdoew"; - нельзя переназначить
@@ -18,11 +18,11 @@ console.log(lastName);
 
 //примитивы
 // 1 - string ('',"",``)
-let myName = 'Aleksandra';
+let myName = "Aleksandra";
 console.log(name); //aleksandra
 console.log(typeof myName); //string
 
-let count = '30';
+let count = "30";
 console.log(count);
 console.log(typeof count); //number
 
@@ -56,25 +56,25 @@ const obj = {};
 console.log(obj);
 
 const sasha = {
-    //properties - существительные и прилагательные
-    name: "Sasha",
-    lastName: "Hrevtsova",
-    age: 30,
-    hairColor: "Brown",
-    married: false,
-    children: true,
-//methods - глаголы
+  //properties - существительные и прилагательные
+  name: "Sasha",
+  lastName: "Hrevtsova",
+  age: 30,
+  hairColor: "Brown",
+  married: false,
+  children: true,
+  //methods - глаголы
 
-toShowName() {
+  toShowName() {
     console.log(this.name);
-    },
+  },
 };
 
 console.log(sasha);
-sasha.name = "Aleksandra"
+sasha.name = "Aleksandra";
 console.log(sasha);
 
-sasha.toShowName ();
+sasha.toShowName();
 
 sasha.height = 172;
 console.log(sasha);
@@ -84,9 +84,9 @@ const arr = [];
 console.log(arr);
 
 const productslist = [
-    "apples",
-    { meat: "chicken", eggs: 10, bread: "white"},
-    null,
+  "apples",
+  { meat: "chicken", eggs: 10, bread: "white" },
+  null,
 ];
 
 console.log(productslist);
@@ -101,9 +101,9 @@ console.log(productslist);
 
 //многомерные массивы
 const newArr = [
-    [1, 2, 3], //index 0
-    ["alpha", "beta", "gama"], // index 1
-    [undefined, null], //index 2
+  [1, 2, 3], //index 0
+  ["alpha", "beta", "gama"], // index 1
+  [undefined, null], //index 2
 ];
 console.log(newArr);
 
@@ -120,11 +120,11 @@ console.log(newArr[2][1]); //null
 
 // function
 //function expression - функциональное выражение
-const funcExpression = function(params) {
-//объявление функции
-console.log(params);
-console.log("Hello!");
-console.log("I'm a function Expression!");
+const funcExpression = function (params) {
+  //объявление функции
+  console.log(params);
+  console.log("Hello!");
+  console.log("I'm a function Expression!");
 };
 // аргументы = значение параметров при вызове
 funcExpression(1, 2, 3);
@@ -136,9 +136,145 @@ arrowFunc(19, 45, 25);
 
 //function declaration
 function funcDeclaration(a, b, c) {
-    console.log(a * b * c);
+  console.log(a * b * c);
 }
 funcDeclaration(2, 4, 5);
 
 // symbol
+//операторы сравнения
+console.log(5 > 7); //false
+console.log(4 > 2); //true
+console.log(3 >= 3); //true
+console.log(3 >= 4); // false
 
+//равенство
+//строгое равенство
+console.log(5 === 5); // false
+//не строгое равенство - происходит логическое приведение типов
+console.log(5 == "5"); // true
+console.log(5 === "4"); // false
+
+// строгое неравенство
+console.log(5 !== "5"); //true
+
+//нестрогое неравенство
+console.log(5 != "5"); //false
+console.log(5 !== "4"); //true
+
+//! - знак отрицания, переворачивает значения
+console.log(!true);
+console.log(!false);
+
+//преобразование типов к строке
+let num = 12;
+console.log(num);
+console.log(typeof num); //number
+
+num = num + "";
+console.log(num);
+console.log(typeof num); //string
+
+let newNum = 23;
+console.log(newNum);
+console.log(typeof newNum); //number
+
+newNum = String(newNum);
+console.log(newNum);
+console.log(typeof newNum); //string
+
+// to number
+let stringNum = "34";
+console.log(stringNum);
+console.log(typeof stringNum); //string
+
+stringNum = +stringNum;
+console.log(stringNum);
+console.log(typeof stringNum); //number
+
+let boolNum = true;
+console.log(boolNum);
+console.log(typeof boolNum); //boolean
+
+boolNum = Number(boolNum);
+console.log(boolNum); //1
+console.log(typeof boolNum); //number
+
+// to bool
+let numValue = 1;
+console.log(numValue);
+console.log(typeof numValue);
+
+numValue = Boolean(numValue);
+console.log(numValue); //true
+console.log(typeof numValue); //boolean
+
+console.log(Boolean(0));
+console.log(Boolean(""));
+console.log(Boolean(null));
+console.log(Boolean(undefined));
+console.log(Boolean(NaN));
+console.log(Boolean(false));
+
+console.log(Boolean(1));
+console.log(Boolean(" "));
+console.log(Boolean(" "));
+console.log(Boolean(` !`));
+console.log(Boolean(Infinity));
+console.log(Boolean(true));
+
+//логические операторы
+// && - логическое и возвращает последние тру значения, если они все тру
+console.log(1 && true && 100); // true
+// true true true
+console.log(1 && true); // true
+//true true
+
+// возвращает первое ложное значение, если оно есть
+console.log(0 && true); // 0
+//false true
+console.log(false && true);
+// false true
+console.log(1 && 0 && true && false); // 0
+//true false true false
+console.log(1 && false && true && 0); // false
+//true false true false
+
+//  || - логическое или
+console.log(1 || true || 100); // 1
+// true && true && true
+console.log(1 || true); // 1
+// true && true
+
+console.log(0 || true);
+//
+console.log(false || true || 1);
+// true false && true
+
+console.log(1 || 0 || true || false); // 0
+//true false true false
+console.log(1 || false || true || 0); // false
+//true false true false
+
+//или последнее ложное значение, если все они ложные
+console.log("" || 0 || undefined || false);
+// false false || false || false || false
+console.log(NaN || false || null || 0); //0
+//false false false || false//
+// ! - логическое не
+console.log(!1); // false
+console.log(!0); // true
+console.log(!""); // true
+console.log(!" "); // false
+console.log(!NaN); // true
+console.log(!undefined); // true
+console.log(!null); // true
+
+// двойное отрицание
+console.log(!!1); //true
+console.log(!!0); //false
+console.log(!!""); // False
+console.log(!!" "); // true
+console.log(!NaN); // false
+console.log(!undefined); // false
+console.log(!null); // false
+//falsy values js
