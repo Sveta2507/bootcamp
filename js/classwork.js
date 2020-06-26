@@ -52,6 +52,90 @@ console.log(typeof cart); // object - специальная ошибка в js
 
 // сложные
 // object
+const obj = {};
+console.log(obj);
+
+const sasha = {
+    //properties - существительные и прилагательные
+    name: "Sasha",
+    lastName: "Hrevtsova",
+    age: 30,
+    hairColor: "Brown",
+    married: false,
+    children: true,
+//methods - глаголы
+
+toShowName() {
+    console.log(this.name);
+    },
+};
+
+console.log(sasha);
+sasha.name = "Aleksandra"
+console.log(sasha);
+
+sasha.toShowName ();
+
+sasha.height = 172;
+console.log(sasha);
+
 // array
+const arr = [];
+console.log(arr);
+
+const productslist = [
+    "apples",
+    { meat = "chicken", eggs: 10, bread: "white"},
+    null,
+];
+
+console.log(productslist);
+
+console.log(productslist[0]); // apples
+console.log(productslist[1]); // { meat = "chicken", eggs: 10, bread: "white"}
+console.log(productslist[2]); // null
+
+productslist[0] = "oranges";
+
+console.log(productslist);
+
+//многомерные массивы
+const newArr = [
+    [1, 2, 3], //index 0
+    ["alpha", "beta", "gama"], // index 1
+    [undefined, null], //index 2
+];
+console.log(newArr);
+
+console.log(newArr[0][0]); //1
+console.log(newArr[0][1]); //2
+console.log(newArr[0][2]); //3
+
+console.log(newArr[1][0]); //alpha
+console.log(newArr[1][1]); //beta
+console.log(newArr[1][2]); //gama
+
+console.log(newArr[2][0]); //undefined
+console.log(newArr[2][1]); //null
+
 // function
+//function expression - функциональное выражение
+const funcExpression = function(params) {
+//объявление функции
+console.log(params);
+console.log("Hello!");
+console.log("I'm a function Expression!");
+};
+// аргументы = значение параметров при вызове
+funcExpression(1, 2, 3);
+
+//arrow function
+
+//function declaration
+function funcDeclaration(a, b, c) {
+    console.log(a * b * c);
+}
+funcDeclaration(2, 4, 5);
+
 // symbol
+
