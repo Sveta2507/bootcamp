@@ -27,7 +27,7 @@ console.log(count);
 console.log(typeof count); //number
 
 // 2 - number
-let age = 30
+let age = 30;
 console.log(age);
 console.log(typeof age); //number
 
