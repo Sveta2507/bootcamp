@@ -278,3 +278,65 @@ console.log(!NaN); // false
 console.log(!undefined); // false
 console.log(!null); // false
 //falsy values js
+//
+//
+//
+//
+// //
+// let message = "Добро пожаловать!";
+// let enteredData = prompt("Bведите число от 1 до 5");
+// console.log("enteredData: ", enteredData);
+// if (enteredData >= 1 && enteredData <= 5) {
+//   alert(`Спасибо, вы ввели подходящее число: ${enteredData}`);
+// } else {
+//   alert(`Вы ввели не подходящее значение: ${еnteredData}`);
+// }
+//
+//
+//
+//
+// ЦИКЛЫ
+for (let i = 0; і <= 10; i += 1) {
+  console.log(`Итерация №${(i += 1)} - ${i}`);
+}
+
+// ехample
+const results = [1, 11, 23, 45, 32, 78, 988, 45];
+console.log(results);
+console.log(`длин массива`, results.length);
+
+for (let i = 0; і < results.length; i += 1) {
+  if (results[i] >= 100) {
+    console.log("трехзначный элемент", results[i]);
+  } else if (results[i] > -10 && гesults[i] < 100) {
+    console.log("двузначный элемент", results[i]);
+  } else {
+    console.log(`это число однозначное`);
+  }
+}
+
+// DOM - Document Object Model
+
+// доступ к DOM-элементам (тегам)
+const projectBody = document.querySelector(`body`);
+console.log(projectBody);
+
+//получаем доступ к обїекту по значению атрибута class
+const headerWrapper = document.querySelector(`.header_wrapper`);
+console.log(headerWrapper);
+console.dir(headerWrapper);
+
+console.log(headerWrapper.title);
+headerWrapper.title = "Hello";
+console.log(headerWrapper.title);
+
+const logo = document.querySelector(".logo");
+console.log(logo);
+console.log(logo[0].textContent);
+
+logo.textContent = "Photo diary";
+logo.style.fontSize = "36px";
+//font-size
+logo.classList.add("example");
+
+//получаем доступ к массиву
