@@ -344,23 +344,40 @@ for (let i = 0; і < results.length; i += 1) {
 // доступ к DOM-элементам (тегам)
 const projectBody = document.querySelector(`body`);
 console.log(projectBody);
+console.dir(projectBody);
 
-//получаем доступ к обїекту по значению атрибута class
+//получаем доступ к объекту по значению атрибута class
 const headerWrapper = document.querySelector(`.header_wrapper`);
 console.log(headerWrapper);
 console.dir(headerWrapper);
 
 console.log(headerWrapper.title);
-headerWrapper.title = "Hello";
+headerWrapper.title = "Hello!";
 console.log(headerWrapper.title);
 
-const logo = document.querySelector(".logo");
+// //получаем доступ к массиву через значение класса
+// //const logo = document.querySelector(".logo");
+//console.dir(logo);
+
+//получаем доступ через идентификатор
+const logo = document.getElementsById("main-logo");
 console.log(logo);
+console.dir(logo);
 console.log(logo[0].textContent);
 
-logo.textContent = "Photo diary";
-logo.style.fontSize = "36px";
+logo[0].textContent = "Photo diary";
+logo[0].style.fontSize = "36px";
 //font-size
-logo.classList.add("example");
+logo[0].classList.add("example");
 
-//получаем доступ к массиву
+//const logo = document.getElementsByClassName("logo");
+// console.log(logo);
+// console.dir(logo);
+// console.log(logo[0].textContent);
+
+// logo[0].textContent = "Photo diary";
+// logo[0].style.fontSize = "36px";
+// //font-size
+// logo[0].classList.add("example");
+
+//получаем доступ через data-atribure
