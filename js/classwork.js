@@ -279,9 +279,33 @@ console.log(!undefined); // false
 console.log(!null); // false
 //falsy values js
 //
-//
-//
-//
+//взаимодействие с пользователем
+// let msg = confirm("Are you ready?")
+// console.log(msg);//true -eсли пользователь нажал кнопку ok
+// false если пользователь нажал кнопку отмена (Сancel)
+
+// let greet = alert("Welcome!")
+// сonsole.log (greet); // undefined
+
+// let userData = prompt("Enter your name please");
+// console.log(userData);
+// если пользователь внес какие-то данные в поле ввода под сообщение /и нажал кнопку ок, то эти данные запишутся в переменную изeгData, 1 если пользователь, нажал кнопку отмена (Cancel), то запишется пиll
+
+//ветвления
+// if (1 < 0) {
+//   console.log("Hello world");
+// }
+
+// //
+// let message = "Добро пожаловать!";
+// let enteredData = prompt("Введите число от 1 до 5");
+// console.log("enteredData: ", enteredData);
+
+// if (enteredData >= 1 && enteredData <= 5) {
+//   console.log("Спасибо, вы ввели подходящее число");
+// } else {
+//   console.log("Вы ввели не подходящее значеие");
+// }
 // //
 // let message = "Добро пожаловать!";
 // let enteredData = prompt("Bведите число от 1 до 5");

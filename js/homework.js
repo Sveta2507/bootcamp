@@ -134,3 +134,12 @@ function funcDeclaration(a, b, c) {
   console.log(a * b * c);
 }
 funcDeclaration(2, 4, 5);
+
+//task 5
+const greet = prompt("Введите ваше имя");
+
+if (greet) {
+  alert(`Здравствуйте: ${enteredData}`);
+} else {
+  alert(`До свидания: ${еnteredData}`);
+}
