@@ -139,7 +139,7 @@ funcDeclaration(2, 4, 5);
 const greet = prompt("Введите ваше имя");
 
 if (greet) {
-  alert(`Здравствуйте: ${enteredData}`);
+  alert(`Здравствуйте: ${greet}`);
 } else {
-  alert(`До свидания: ${еnteredData}`);
+  alert(`До свидания: ${greet}`);
 }
