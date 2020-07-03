@@ -50,7 +50,8 @@ a {
 
 .header_wrapper {
   position: fixed;
-  background: wheat;
+  background: rgb(202, 196, 223);
+  ;
   width: 100%;
   /* top: -50px; */
   z-index: 100;
@@ -142,7 +143,7 @@ a {
   display: flex;
   /*width: 70px;*/
   /*border: 1px solid red;*/
-  /*padding: 20px;*/
+  padding: 20px;
   position: relative;
   user-select: none;
   cursor: grab;
@@ -150,7 +151,7 @@ a {
 
 /* это спан из html - основной элемент гамбургера*/
 
-.header .menu-btn:checked ~ .menu {
+.header .menu-btn:checked~.menu {
   max-height: 100%;
 }
 
@@ -183,16 +184,16 @@ a {
   top: -10px;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon {
+.header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon::before {
+.header .menu-btn:checked~.menu-icon .navicon::before {
   transform: rotate(-45deg);
   top: 0;
 }
 
-.header .menu-btn:checked ~ .menu-icon .navicon::after {
+.header .menu-btn:checked~.menu-icon .navicon::after {
   transform: rotate(45deg);
   top: 0;
 }
